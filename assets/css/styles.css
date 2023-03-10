@@ -419,14 +419,37 @@ padding-top:1rem ;
   margin-bottom: 1.5rem;
 }
 
-.skills__group{
-  column-gap: 2rem;
-  justify-content: center;
+.skills__box{
   display: flex;
-  row-gap: 1rem;
-  align-content: flex-end;
+  column-gap: 2.5rem;
+  justify-content: center;
+
+}
+.skills__group{
+  display: grid;
+  row-gap: 1.5rem;
+  align-items: flex-start;
 }
 
+.skills__data{
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.skills .bxs-badge-check{
+  color: var(--first-color);
+  font-size: 1rem;
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+}
+
+.skills__level{
+  font-size: var(--tiny-font-size);
+}
 /*=============== SERVICES ===============*/
 
 
