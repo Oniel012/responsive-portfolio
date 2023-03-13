@@ -5,15 +5,29 @@ const scrollHeader = ()=>{
                         : header.remove("scroll-header")
 }
 
-/*=============== SERVICES MODAL ===============*/
-
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
+let mixerPortfolio = mixitup('.work__container',{
+    
+    selectors:{
+        target: '.work__card'
+    },
+    animation:{
+        duration:300
+    }
+});
 
 /* Link active work */ 
+const linkwork = document.querySelectorAll('.work__item')
 
-
+function activelink(){
+    linkwork.forEach(L=> L.classList.remove('active-work'));
+    this.classList.add('active-work')
+    console.log("function");
+}
+linkwork.forEach(l => l.addEventListener('click', activelink));
+console.log(linkwork)
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 

@@ -450,20 +450,68 @@ padding-top:1rem ;
 .skills__level{
   font-size: var(--tiny-font-size);
 }
-/*=============== SERVICES ===============*/
-
-
-/* Services modal */
-
-
-/*Active modal*/
-
 
 /*=============== WORK ===============*/
 
+.work__container{
+  padding-top: 1rem;
+}
+
+.work__filters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .75rem;
+  margin-bottom: 2rem;
+}
+
+.work__item{
+  cursor: pointer;
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  padding: .25rem .75rem;
+  border-radius: .5rem;
+}
+
+.work__card{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.work__img{
+  border-radius: 1rem;
+  padding-bottom: .75rem;
+}
+
+.work__title{
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+  margin-bottom: .25rem;
+}
+
+.work__button{
+  font-size: var(--small-font-size);
+  width: max-content;
+  color: var(--first-color); 
+  display: flex;
+  column-gap: .25rem;
+  align-items: center;
+}
+
+.work__button:hover .work__icon{
+  transform: translateX(.25rem)
+}
+
+.work__icon{
+  font-size: 1rem;
+  transition: .4s;
+}
 
 /* Active item work*/
-
+.active-work{
+  background-color: var(--first-color);
+  color: var(--body-color);
+}
 
 /*=============== TESTIMONIAL ===============*/
 
